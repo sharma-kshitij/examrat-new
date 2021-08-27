@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:wght@700&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'Monsterrat',sans-serif;
+}
+
+
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+.nav{
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+
+.nav-item{
+    margin-right: 5rem;
+}
+
+.nav-item:last-child{
+    margin-right: 0;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: opacity 0.3s;
+    font-family: 'Ubuntu',sans-serif;
+    color: #f37224;
+    font-size: 1.5rem;
+}
+
+.logo{
+    display: block;
+    width: 15rem;
+    color: #f37224;
+}
+
+.nav-link:hover{
+    opacity: 0.6;
+}
+
+.container{
+    max-width: 125rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.landing-page{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-color: #feefdc;
+}
+
+.landing-page::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: inherit;
+    height: 100vh;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.content-details{
+    max-width: 100%;
+}
+
+.title{
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    font-family: 'Monsterrat',sans-serif;
+}
+
+.sm-list{
+    display: flex;
+    margin-top: 10rem;
+}
+
+.sm-link{
+    color: #929FC5;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid #929FC5;
+    border-radius: 50%;
+    display: flex;
+    margin-right: 2.5rem;
+}
+.sm-link i{
+    margin: auto;
+}
+
+.sm-link:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .nav{
+        align-items: center;
+    }
+
+    .content{
+        grid-template-columns: 1fr;
+    }
+
+    .content-details{
+        order: 1;
+        max-width: 100%;
+    }
+
+    .title{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    html{
+        overflow: hidden;
+    }
+    .sm-link{
+        margin: auto;
+    }
+    .sm-list{
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+}
+
+
+
